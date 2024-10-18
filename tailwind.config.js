@@ -45,18 +45,18 @@ module.exports = {
           }
         },
         'slideIn': {
-          'from': {
+          '0%': {
             transform: 'translateX(-200px)'
           },
           
-          'to': {
+          '100%': {
             transform:'translateX(0)'
           }
         }
       },
       animation: {
         upp: 'upp 2.5s linear infinite forwards',
-        slideIn: 'slideIn 0.5s ease-out forwards'
+        slideIn: 'slideIn 22s ease-out forwards'
       }
     },
     

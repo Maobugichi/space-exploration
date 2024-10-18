@@ -19,6 +19,7 @@ const sideNav = document.querySelector(".side")
 
 menu.addEventListener("click", () => { 
  sideNav.classList.add("animate-slideIn")
+ sideNav.classList.remove("-translate-y-full")
  console.log(sideNav)
 })
 
