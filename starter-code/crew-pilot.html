@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="flex flex-col justify-between xl:block bg-crew-mobile h-[100vh]  container xl:bg-crew-img bg-no-repeat bg-cover xl:h-[100vh]">
+    <nav class="w-[90%] mx-auto h-[60px] xl:font-barlowCondensedRegular flex justify-between xl:h-[150px] items-center xl:relative xl:w-full">
+      <img class="mt-6 xl:mt-0 xl:ml-[6%]" src="./assets/shared/logo.svg" alt="company logo">
+      <hr class="xl:border-lightGray xl:w-[420px] xl:absolute xl:left-[15%] xl:z-10 xl:opacity-25">
+      <ul class="hidden xl:backdrop-blur-[40px] xl:bg-whiteSepia xl:text-white xl:flex xl:w-[58%]  xl:justify-center xl:gap-11 xl:items-center xl:h-[56%]">
+        <li class="tracking-widest font-normal"><a href="/starter-code/index.html">00 Home</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/destination-moon.html">01 Destination</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/crew-pilot.html">02 Crew</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/technology-vehicle.html">03 Technology</a></li>
+      </ul>
+      <img class="mt-6  xl:hidden w-[40px] h-[30px]" src="/starter-code/assets/shared/icon-hamburger.svg" alt="">
+    </nav>
+
+    <div class="xl:hidden side z-[100] backdrop-blur-[40px] bg-whiteSepia  w-[70%] fixed right-0 top-0 h-[100vh]">
+      <img class="close mt-8 float-right p-5" src="/starter-code/assets/shared/icon-close.svg" alt="exit">
+      <ul class="mt-[30%]   text-white flex flex-col gap-11 p-10 h-[56%]">
+        <li class="tracking-widest font-normal"><a href="/starter-code/index.html">00 Home</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/destination-moon.html">01 Destination</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/crew-pilot.html">02 Crew</a></li>
+        <li class="tracking-widest font-normal"><a href="/starter-code/technology-vehicle.html">03 Technology</a></li>
+      </ul>
+    </div>
+
+    <main class="h-[80%]  xl:h-[75%] ">
+      <section class="text-lightGray w-full h-full" aria-labelledby="hero__head">
+        <article class="flex flex-col w-full justify-between  xl:items-center  xl:w-[80%] xl:mx-auto h-full xl:flex xl:flex-row xl:gap-10">
+            <div class=" w-full h-[40%]  flex flex-col items-center justify-between  xl:h-[60%]  xl:w-1/2 xl:items-start">
+              <span class="tracking-[5px] text-sm uppercase text-center font-barlowCondensedRegular">02 meet your crew</span>
+               <div class="flex flex-col justify-between gap-3">
+                <p class="crew-role text-center leading-6 uppercase text-xl xl:text-2xl font-bellefair xl:text-left"> 
+                  Commander
+                </p>
+                <h2 class="crew-header text-center uppercase text-2xl xl:text-4xl tracking-wider font-bellefair xl:text-left">Douglas Hurley</h2>
+              </div>
+              
+              <p class="crew-bio w-[90%] text-center leading-7 font-barlowCondensedRegular xl:w-[95%] xl:text-left">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+              <div class="flex justify-center gap-5 ">
+                <button class="Douglas button1 bg-white rounded-[50%] w-[10px] h-[10px]"></button>
+                <button class="Mark button1 bg-white rounded-[50%] w-[10px] h-[10px]"></button>
+                <button class="Victor button1 bg-white rounded-[50%] w-[10px] h-[10px]"></button>
+                <button class="Anousheh button1 bg-white rounded-[50%] w-[10px] h-[10px]"></button>
+               </div>
+            </div>
+           <div class=" h-[50%] flex justify-center w-full  xl:h-[95%] xl:left xl:w-1/2 xl:flex xl:justify-end">
+            <img class="crew-img h-full" src="/starter-code/assets/crew/image-douglas-hurley.png" alt="image-douglas-hurley">
+           </div>
+        </article>
+      
+      </section>
+    </main>
+  </div>
+
+<script src="/index.js"></script>
+</body>
+</html>

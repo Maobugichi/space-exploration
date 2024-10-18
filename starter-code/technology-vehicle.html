@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="flex flex-col justify-between xl:block bg-tech-mobile h-[100vh] xl:bg-tech-img xl:h-[105vh] xl:w-full xl:bg-no-repeat xl:bg-cover overflow-hidden">
+      <nav class="w-[90%] mx-auto h-[60px] xl:font-barlowCondensedRegular flex justify-between xl:h-[150px] items-center xl:relative xl:w-full">
+        <img class="mt-6 xl:mt-0 xl:ml-[6%]" src="./assets/shared/logo.svg" alt="company logo">
+        <hr class="xl:border-lightGray xl:w-[420px] xl:absolute xl:left-[15%] xl:z-10 xl:opacity-25">
+        <ul class="hidden xl:backdrop-blur-[40px] xl:bg-whiteSepia xl:text-white xl:flex xl:w-[58%]  xl:justify-center xl:gap-11 xl:items-center xl:h-[56%]">
+          <li class="tracking-widest font-normal"><a href="/starter-code/index.html">00 Home</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/destination-moon.html">01 Destination</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/crew-pilot.html">02 Crew</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/technology-vehicle.html">03 Technology</a></li>
+        </ul>
+        <img class="mt-6 xl:hidden w-[40px] h-[30px]" src="/starter-code/assets/shared/icon-hamburger.svg" alt="">
+      </nav>
+  
+      <div class="xl:hidden side z-[100] backdrop-blur-[40px] bg-whiteSepia  w-[70%] fixed right-0 top-0 h-[100vh]">
+        <img class="close mt-8 float-right p-5" src="/starter-code/assets/shared/icon-close.svg" alt="exit">
+        <ul class="mt-[30%]   text-white flex flex-col gap-11 p-10 h-[56%]">
+          <li class="tracking-widest font-normal"><a href="/starter-code/index.html">00 Home</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/destination-moon.html">01 Destination</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/crew-pilot.html">02 Crew</a></li>
+          <li class="tracking-widest font-normal"><a href="/starter-code/technology-vehicle.html">03 Technology</a></li>
+        </ul>
+      </div>
+
+      <main class="h-[82%]  xl:h-[75%]">
+        <section class="h-full" aria-labelledby="hero__head">
+          <article class="h-full flex flex-col-reverse  justify-between xl:flex xl:flex-row xl:items-center xl:w-[80%] xl:mx-auto xl:h-full ">
+            <div class=" flex flex-col gap-5 items-center w-full h-1/2 xl:flex xl:w-[60%] xl:flex-row  xl:h-full xl:items-center xl:justify-between">
+              <div class="flex gap-4   xl:flex xl:flex-col xl:gap-10 xl:w-[10%] ">
+                <button class="button2 Launch w-[50px] h-[50px] rounded-[50%] bg-white">1</button>
+                <button class="button2 capsule w-[50px] h-[50px]  rounded-[50%] bg-white">2</button>
+                <button class="button2 port w-[50px] h-[50px]  rounded-[50%] bg-white">3</button>
+              </div>
+              <div class=" h-[80%] xl:h-[60%] flex items-center flex-col xl:items-start xl:justify-between xl:flex-start xl:w-[80%]">
+                <div class="flex flex-col gap-5">
+                  <h3 class=" text-lg text-center font-bellefair xl:text-2xl uppercase opacity-50 text-white xl:text-left">The terminology...</h3>
+                  <h1 class="tech-head text-2xl text-lightGray font-bellefair xl:text-4xl uppercase xl:text-left"> Launch vehicle</h1>
+                </div>
+                <p class="tech-desc text-center w-[86%] text-lightGray leading-8 font-barlowCondensedRegular xl:w-[80%] xl:text-left">
+                  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+                  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+                  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+                  it's quite an awe-inspiring sight on the launch pad!
+                </p>
+              </div>
+            </div>
+           
+            <div class="w-full h-[35%] xl:w-[40%] xl:h-full">
+              <img class="tech-img h-full w-full" src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="rocket image">
+            </div>
+          </article>
+         
+        </section>
+      </main>
+    </div>
+
+
+    <script src="/index.js"></script>
+  </body>
+  </html>
