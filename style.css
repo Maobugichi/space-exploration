@@ -592,6 +592,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -606,6 +610,18 @@ video {
 
 .top-\[25\%\] {
   top: 25%;
+}
+
+.top-\[1\] {
+  top: 1;
+}
+
+.top-\[10\] {
+  top: 10;
+}
+
+.top-\[10\%\] {
+  top: 10%;
 }
 
 .z-10 {
@@ -1116,6 +1132,10 @@ video {
 
   .xl\:top-\[30\%\] {
     top: 30%;
+  }
+
+  .xl\:top-\[25\%\] {
+    top: 25%;
   }
 
   .xl\:z-10 {
