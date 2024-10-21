@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./starter-code/**/*.{html,js}",
+    "./*.{html,js}",
     "./src/*.{html,js}",
 
    ],
@@ -17,14 +17,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-       "landing-image":"url(/starter-code/assets/home/background-home-desktop.jpg)",
-       "landing-mobile": "url(/starter-code/assets/home/background-home-mobile.jpg)",
-       "destination-mobile": "url(/starter-code/assets/destination/background-destination-mobile.jpg)",
-       "destination-img": "url(/starter-code/assets/destination/background-destination-desktop.jpg)",
-       "crew-img": "url(/starter-code/assets/crew/background-crew-desktop.jpg)",
-       "crew-mobile":"url(/starter-code/assets/crew/background-crew-mobile.jpg)",
-       "tech-img": "url(/starter-code/assets/technology/background-technology-desktop.jpg)",
-       "tech-mobile": "url(/starter-code/assets/technology/background-technology-mobile.jpg)"
+       "landing-image":"url(/assets/home/background-home-desktop.jpg)",
+       "landing-mobile": "url(/assets/home/background-home-mobile.jpg)",
+       "destination-mobile": "url(/assets/destination/background-destination-mobile.jpg)",
+       "destination-img": "url(/assets/destination/background-destination-desktop.jpg)",
+       "crew-img": "url(/assets/crew/background-crew-desktop.jpg)",
+       "crew-mobile":"url(/assets/crew/background-crew-mobile.jpg)",
+       "tech-img": "url(/assets/technology/background-technology-desktop.jpg)",
+       "tech-mobile": "url(/assets/technology/background-technology-mobile.jpg)"
       
       },
       fontFamily: {
@@ -48,7 +48,7 @@ module.exports = {
         },
         "slideIn": {
           '0%': {
-            transform: 'translateX(-500px)'
+            transform: 'translateX(500px)'
           },
           '100%': {
             transform: 'translateX(0)'
@@ -59,14 +59,14 @@ module.exports = {
             transform: 'translateX(0px)'
           },
           '100%': {
-            transform: 'translateX(-500px)'
+            transform: 'translateX(500px)'
           }
         }
       },
       animation: {
         upp: 'upp 2.5s linear infinite forwards',
-        slideIn: 'slideIn 5s ease-out forwards',
-        slideOut: 'slideOut 5s ease-in forwards'
+        slideIn: 'slideIn 1s ease-out forwards',
+        slideOut: 'slideOut 1s ease-in forwards'
       }
     },
     

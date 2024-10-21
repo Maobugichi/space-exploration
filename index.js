@@ -34,8 +34,13 @@ closeNav.addEventListener("click", () => {
 
 changeDestination.forEach(item => {
     item.addEventListener("click", () => {
-        item.classList.add("border-b-2","border-white")
-        console.log(item)
+      changeDestination.forEach((item) => {
+        item.classList.remove('border-b-2')
+        //item.classList.add("border-b-2", "border-white")
+      });
+      
+      item.classList.toggle('border-b-2');
+     
         if (prev) {
           prev.classList.remove("border-b-2","border-white")
         }
@@ -97,7 +102,7 @@ button2.forEach(btn => {
     });
      btn.classList.toggle('bg-white');
      btn.classList.remove('text-white')
-     btn.classList.toggle('text-red');
+
 
    fetch("./data.json")
    .then(response => {
