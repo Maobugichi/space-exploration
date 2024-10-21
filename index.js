@@ -64,7 +64,6 @@ changeDestination.forEach(item => {
 
 
 button1.forEach(btn => {
-// console.log(btn.className)
  btn.addEventListener("click", () => {
   button1.forEach((btn) => {
     btn.classList.remove('bg-white')
@@ -94,10 +93,11 @@ button2.forEach(btn => {
   btn.addEventListener("click", () => {
     button2.forEach((btn) => {
       btn.classList.remove('bg-white')
-      btn.classList.add('border-2', 'border-white', 'text-white')
+      btn.classList.add('border-2', 'border-white', 'text-white' ,"transition-all", 'duration-75')
     });
-    btn.classList.toggle('bg-white');
-    btn.classList.toggle('text-red');
+     btn.classList.toggle('bg-white');
+     btn.classList.remove('text-white')
+     btn.classList.toggle('text-red');
 
    fetch("./data.json")
    .then(response => {
@@ -113,7 +113,6 @@ button2.forEach(btn => {
        techHead.innerText = tech[0].name
        techDesc.innerText = tech[0].description
        techImg.src = tech[0].images.landscape
-       console.log(tech)
    })
     })
    })
