@@ -15,16 +15,31 @@ const techDesc = document.querySelector(".tech-desc")
 const techImg = document.querySelector(".tech-img")
 const menu = document.querySelector(".menu")
 const sideNav = document.querySelector(".side")
+const closeNav = document.querySelector(".close")
+let prev = null
+let prevBtn = null
 
 
 menu.addEventListener("click", () => { 
  sideNav.classList.add("animate-slideIn")
- sideNav.classList.remove("-translate-y-full")
- console.log(sideNav)
+ sideNav.classList.remove("translate-x-full")
 })
+
+closeNav.addEventListener("click", () => { 
+  sideNav.classList.add("animate-slideOut")
+  sideNav.classList.add("translate-x-full")
+})
+
+
 
 changeDestination.forEach(item => {
     item.addEventListener("click", () => {
+        item.classList.add("border-b-2","border-white")
+
+        if (prev) {
+          prev.classList.remove("border-b-2","border-white")
+        }
+        prev = item
         fetch("./data.json")
         .then(response => {
             if(!response.ok) {
@@ -47,30 +62,43 @@ changeDestination.forEach(item => {
     console.log()
 })
 
-button1.forEach(btn => {
- btn.addEventListener("click", () => {
-fetch("./data.json")
-.then(response => {
-    if(!response.ok) {
-      throw new Error("error")
-    }
-    return response.json()
-})
-.then(data => {
-    const crew = data.crew.filter(crew => {
-      return crew.name.includes(btn.className.slice(0,5))
-    }) 
-    crewRole.innerText = crew[0].role
-    crewHeader.innerText = crew[0].name
-    crewBio.innerText = crew[0].bio
-    crewImg.src = crew[0].images.png
-})
- })
-})
 
+button1.forEach(btn => {
+// console.log(btn.className)
+ btn.addEventListener("click", () => {
+  button1.forEach((btn) => {
+    btn.classList.remove('bg-white')
+    btn.classList.add("bg-slate")
+  });
+  btn.classList.toggle('bg-white');
+  fetch("./data.json")
+  .then(response => {
+      if(!response.ok) {
+        throw new Error("error")
+      }
+      return response.json()
+  })
+  .then(data => {
+      const crew = data.crew.filter(crew => {
+        return crew.name.includes(btn.className.slice(0,5))
+      }) 
+      crewRole.innerText = crew[0].role
+      crewHeader.innerText = crew[0].name
+      crewBio.innerText = crew[0].bio
+      crewImg.src = crew[0].images.png
+  })
+  })
+  })
 
 button2.forEach(btn => {
-    btn.addEventListener("click", () => {
+  btn.addEventListener("click", () => {
+    button2.forEach((btn) => {
+      btn.classList.remove('bg-white')
+      btn.classList.add('border-2', 'border-white', 'text-white')
+    });
+    btn.classList.toggle('bg-white');
+    btn.classList.toggle('text-red');
+
    fetch("./data.json")
    .then(response => {
        if(!response.ok) {

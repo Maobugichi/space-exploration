@@ -11,7 +11,9 @@ module.exports = {
       white: "#fff",
       darkGray: "#A9A9A9",
       lightGray: "#E5E4E2",
-      red: "red"
+      red: "red",
+      slate: "#4B5563",
+      black: "black"
     },
     extend: {
       backgroundImage: {
@@ -44,19 +46,27 @@ module.exports = {
             transform: 'translateY(0)'
           }
         },
-        'slideIn': {
+        "slideIn": {
           '0%': {
-            transform: 'translateX(-200px)'
+            transform: 'translateX(-500px)'
           },
-          
           '100%': {
-            transform:'translateX(0)'
+            transform: 'translateX(0)'
+          }
+        },
+        "slideOut": {
+          '0%': {
+            transform: 'translateX(0px)'
+          },
+          '100%': {
+            transform: 'translateX(-500px)'
           }
         }
       },
       animation: {
         upp: 'upp 2.5s linear infinite forwards',
-        slideIn: 'slideIn 22s ease-out forwards'
+        slideIn: 'slideIn 5s ease-out forwards',
+        slideOut: 'slideOut 5s ease-in forwards'
       }
     },
     
