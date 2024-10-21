@@ -673,6 +673,10 @@ video {
   height: 110vh;
 }
 
+.h-\[25px\] {
+  height: 25px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -721,6 +725,14 @@ video {
   height: 100%;
 }
 
+.h-\[\%\] {
+  height: %;
+}
+
+.h-\[55\%\] {
+  height: 55%;
+}
+
 .w-\[10px\] {
   width: 10px;
 }
@@ -735,6 +747,10 @@ video {
 
 .w-\[420px\] {
   width: 420px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[50px\] {
@@ -767,10 +783,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .translate-x-full {
