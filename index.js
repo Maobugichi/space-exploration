@@ -35,7 +35,7 @@ closeNav.addEventListener("click", () => {
 changeDestination.forEach(item => {
     item.addEventListener("click", () => {
         item.classList.add("border-b-2","border-white")
-
+        console.log(item)
         if (prev) {
           prev.classList.remove("border-b-2","border-white")
         }
@@ -56,10 +56,10 @@ changeDestination.forEach(item => {
              destination.innerText = desti[0].distance
              travel.innerText = desti[0].travel
              destiMage.src = desti[0].images.webp
-            console.log(desti)
+      
         })
     })
-    console.log()
+  
 })
 
 
