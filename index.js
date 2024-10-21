@@ -22,12 +22,18 @@ let prevBtn = null
 
 menu.addEventListener("click", () => { 
  sideNav.classList.add("animate-slideIn")
- sideNav.classList.remove("translate-x-full")
+ //sideNav.classList.remove("translate-x-full")
 })
 
 closeNav.addEventListener("click", () => { 
   sideNav.classList.add("animate-slideOut")
-  sideNav.classList.add("translate-x-full")
+  //sideNav.classList.add("translate-x-full")
+  setTimeout(() => {
+    sideNav.classList.remove("animate-slideIn")
+    sideNav.classList.remove("animate-slideOut")
+  }, 1000)
+ 
+  
 })
 
 
