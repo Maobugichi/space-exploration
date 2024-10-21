@@ -17,14 +17,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-       "landing-image":"url(/assets/home/background-home-desktop.jpg)",
-       "landing-mobile": "url(/assets/home/background-home-mobile.jpg)",
-       "destination-mobile": "url(/assets/destination/background-destination-mobile.jpg)",
-       "destination-img": "url(/assets/destination/background-destination-desktop.jpg)",
-       "crew-img": "url(/assets/crew/background-crew-desktop.jpg)",
-       "crew-mobile":"url(/assets/crew/background-crew-mobile.jpg)",
-       "tech-img": "url(/assets/technology/background-technology-desktop.jpg)",
-       "tech-mobile": "url(/assets/technology/background-technology-mobile.jpg)"
+       "landing-image":"url(./assets/home/background-home-desktop.jpg)",
+       "landing-mobile": "url(./assets/home/background-home-mobile.jpg)",
+       "destination-mobile": "url(./assets/destination/background-destination-mobile.jpg)",
+       "destination-img": "url(./assets/destination/background-destination-desktop.jpg)",
+       "crew-img": "url(./assets/crew/background-crew-desktop.jpg)",
+       "crew-mobile":"url(./assets/crew/background-crew-mobile.jpg)",
+       "tech-img": "url(./assets/technology/background-technology-desktop.jpg)",
+       "tech-mobile": "url(./assets/technology/background-technology-mobile.jpg)"
       
       },
       fontFamily: {
